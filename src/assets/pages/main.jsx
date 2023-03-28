@@ -7,7 +7,7 @@ import StarIcon from '../icons/icon-star.svg';
 
 export default function MainPage() {
     return (
-        <main>
+        <main id="main-1">
             {/* Star icon image */}
             <div className="star-image-background">
                 <img src={StarIcon} alt="Star" />
