@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Roboto&family=Work+Sans&display=swap');
+
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Dark-Blue-2: hsl(213, 19%, 24%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  /* Tipography */
+  --Standard-pragraph-size: 15px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+
+    font-family: Overpass;
+}
+
+h1, h2, p {
+    color: var(--White);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: var(--Standard-pragraph-size);
+    color: var(--Light-Grey);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+
+main {
+    background-color: var(--Dark-Blue);
+    padding: 40px;
+    border-radius: 32px;
+    max-width: 350px;
+}
+
+#main-2 {
+    display: grid;
+    place-items: center;
+}
+
+#main-2 > * {
+    margin-bottom: 20px;
+}
+
+.rating-given {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--Dark-Blue-2);
+    color: var(--Orange);
+    font-weight: 300;
+}
+
+.thank-you-text {
+    text-align: center;
+}
+
+.star-image-background {
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+    place-content: center;
+
+    background-color: var(--Dark-Blue-2);
+
+    border-radius: 50%;
+
+    margin-bottom: 40px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.rating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+
+    font-size: var(--Standard-pragraph-size);
+    font-weight: 700;
+
+    color: var(--Light-Grey);
+    background-color: var(--Dark-Blue-2);
+
+    transition: color, background-color 250ms ease-out;
+}
+
+.rating-button-active {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rating-button:hover {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+button[type=submit] {
+    width: 100%;
+    height: 50px;
+    border-radius: 32px;
+    border-style: none;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: var(--Standard-pragraph-size);
+
+    color: var(--White);
+    background-color: var(--Orange);
+
+    transition: color, background-color 250ms ease-out;
+}
+
+button[type=submit]:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.true {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
