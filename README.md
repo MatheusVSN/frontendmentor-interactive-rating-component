@@ -1,5 +1,6 @@
 # Interactive Rating Component
 
+### Image
 ![Desktop Preview](PreviewImage.png)
 
 ### Preview
